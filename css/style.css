@@ -1,0 +1,133 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 10px;
+    font-family: 'Poor Story', cursive;
+    /* border: 1px solid red; */
+}
+
+/* =========================== Type ============================= */
+
+body {
+    background-color: yellow;
+    
+}
+
+h1,
+h2 {
+    font-family: 'Poor Story', cursive;
+    font-size: 4.8rem;
+}
+
+
+
+/* ============================== Containers ========================= */
+
+.section--flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container--flex {
+    display: flex;
+}
+
+/* ================================== Transitions ======================= */
+
+.section--hidden {
+    display: none;
+}
+
+.section--visible {
+    display: flex;
+}
+
+
+/* ============================ Layout ============================= */
+/* ==== sections ==== */
+section {
+    height: 100vh;
+}
+
+section:nth-child(1) {
+    background-color: yellow;
+}
+
+section:nth-child(2) {
+    background-color: blue;
+}
+
+section:nth-child(3) {
+    background-color: green;
+}
+
+section:nth-child(4) {
+    background-color: red;
+}
+
+/* ==== landing page ==== */
+h1 {
+    padding: 3em;
+}
+
+h1:hover {
+    cursor: pointer;
+}
+
+/* ==== menu ==== */
+
+.section__menu {
+    flex-direction: column;
+}
+
+.menu__title {
+    
+    font-size: 4.8rem;
+}
+
+.menu__title:hover {
+    cursor: pointer;
+    transition-duration: 1s;
+    font-size: 10rem;
+    transform: rotateZ(30deg);
+}
+
+.container__menu {
+    width: 60vw;
+    height: 30vh;
+    /* border: 5px solid black; */
+}
+
+.container__menu--item {
+    width: 20vw;
+    /* border: 3px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.title__menu--medium {
+    width: 100%;
+}
+
+/* ==== about ==== */
+
+/* ==== projects ==== */
+
+/* ==== contact ==== */
+
+/* ========================================== Contact ====================================== */
+
+
+
+
+
+
+
+
+
+
+
