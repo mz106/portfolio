@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="section__one visible" id="section-one">
+        <h2>Section One</h2>
+        <div class="container--flex">
+            <div class="container--flex container visible" id="box-one">Section Two</div>
+            <div class="container--flex container" id="box-two">Section Three</div>
+            <!-- <div class="container--flex container" id="box-three">Three</div> -->
+        </div>
+    </section>
+    <section class="section__one hidden" id="section-two">
+        <h2>Section Two</h2>
+        <div class="container--flex container" id="section-two-return-one">Section One</div>
+    </section>
+    <section class="section__two hidden" id="section-three">
+        <h2>Section Three</h2>
+        <div class="container--flex container" id="section-three-return-one">Section One</div>
+    </section>
+    <script src="test.js"></script>
+</body>
+</html>

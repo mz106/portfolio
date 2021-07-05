@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    /* border: 3px solid red; */
+}  
+
+section {
+    height: 100vh;
+    display: flex;
+    
+}
+
+section:nth-child(1) {
+    background-color: cadetblue;
+}
+
+section:nth-child(2) {
+    background-color: blue;
+}
+
+section:nth-child(3) {
+    background-color: blueviolet;
+}
+
+.container--flex {
+    display: flex;
+    
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    justify-content: center;
+    
+}
+
+.container:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}
