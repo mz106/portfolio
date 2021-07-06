@@ -7,27 +7,59 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet"> 
     <title>Document</title>
 </head>
 <body>
     <section class="section--flex section__landing section--visible" id="section-landing">
         <div class="container--flex container__landing" id="landing-btn">
-            <h1 >Michael Zwierzanski</h1>
+            <h1 class="animate__animated animate__bounce">Michael Zwierzanski</h1>
         </div>
     </section>
-    <section class="section--flex section__menu section--hidden" id="section-menu">
-        <h2 class="menu__title section--visible" id="title-menu">menu</h2>
+    <section class="section--flex section__menu section--hidden slideInRight" id="section-menu">
+        <h2 class="menu__title section--visible animate__animated animate__bounce" id="title-menu">menu</h2>
         <div class="container--flex container__menu section--hidden" id="container-menu">
-            <div class="container--flex container__menu--item section--hidden" id="menu-item-one"><h2 class="title__menu--medium">about</h2></div>
-            <div class="container--flex container__menu--item section--hidden" id="menu-item-one"><h2 class="title__menu--medium">projects</h2></div>
-            <div class="container--flex container__menu--item section--hidden" id="menu-item-one"><h2 class="title__menu--medium">contact</h2></div>
+            <div class="container--flex container__menu--item section--hidden animate__animated animate__backInLeft" id="menu-item-one"><h2 class="title__menu--medium grow">about</h2></div>
+            <div class="container--flex container__menu--item section--hidden animate__animated animate__backInUp" id="menu-item-two"><h2 class="title__menu--medium">projects</h2></div>
+            <div class="container--flex container__menu--item section--hidden animate__animated animate__backInRight" id="menu-item-three"><h2 class="title__menu--medium">contact</h2></div>
         </div>
     </section>
-    <section class="section--flex section__about section--hidden" id="section-about"><h2>about</h2></section>
-    <section class="section--flex section__projects section--hidden" id="section-projects"><h2>projects</h2></section>
+    <section class="section--flex section__about section--hidden" id="section-about">
+        <h2 class="about__title section--visible" id="title-about">about</h2>
+        <div class="container--flex container__about section--hidden" id="about-container">
+            <div class="container--flex container__about--small">
+                <p class="about__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit reiciendis, 
+                    delectus ullam mollitia alias ratione consectetur quam debitis, nemo architecto 
+                    reprehenderit quis? Eaque saepe tempora maxime minima! Eveniet, quae reprehenderit?
+                </p>
+            </div>
+            <div class="container--flex container__about--small">
+                <p class="about__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit reiciendis, 
+                    delectus ullam mollitia alias ratione consectetur quam debitis, nemo architecto 
+                    reprehenderit quis? Eaque saepe tempora maxime minima! Eveniet, quae reprehenderit?
+                </p>
+            </div>
+            <div class="container--flex container__about--small">
+                <p class="about__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit reiciendis, 
+                    delectus ullam mollitia alias ratione consectetur quam debitis, nemo architecto 
+                    reprehenderit quis? Eaque saepe tempora maxime minima! Eveniet, quae reprehenderit?
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section--flex section__projects section--hidden" id="section-projects">
+        <h2 class="project__title section--visible" id="title-projects">projects</h2>
+        <div class="container--flex container__projects section--hidden" id="projects-container">
+            <div class="container--flex container__projects--small"><p>Project 1</p></div>
+            <div class="container--flex container__projects--small"><p>Project 2</p></div>
+            <div class="container--flex container__projects--small"><p>Project 3</p></div>
+        </div>
+    </section>
     <section class="section--flex section__contact section--hidden" id="section-contact"><h2>contact</h2></section>
     </div>
     <script src="js/script.js"></script>
 </body>
 </html>
+
+<!-- animate__backInRight -->
