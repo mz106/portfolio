@@ -4,14 +4,13 @@
     margin: 0;
     font-size: 10px;
     font-family: 'Poor Story', cursive;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 /* =========================== Type ============================= */
 
 body {
     background-color: yellow;
-    
 }
 
 h1,
@@ -20,9 +19,15 @@ h2 {
     font-size: 4.8rem;
 }
 
-
+.about__para {
+    font-size: 2rem;
+}
 
 /* ============================== Containers ========================= */
+
+.body {
+    height: 400vh;
+} 
 
 .section--flex {
     display: flex;
@@ -32,7 +37,7 @@ h2 {
 
 .container--flex {
     display: flex;
-}
+} 
 
 /* ================================== Transitions ======================= */
 
@@ -43,6 +48,29 @@ h2 {
 .section--visible {
     display: flex;
 }
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(2000px) scale(0.7);
+        opacity: 0.7;
+    }
+
+    80% {
+        transform: translateX(0px) scale(0.7);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    } 
+}    
+
+  
+
+.slideInRight {
+    animation: slideInRight 2s;
+} 
 
 
 /* ============================ Layout ============================= */
@@ -70,6 +98,7 @@ section:nth-child(4) {
 /* ==== landing page ==== */
 h1 {
     padding: 3em;
+    
 }
 
 h1:hover {
@@ -110,12 +139,63 @@ h1:hover {
 }
 
 .title__menu--medium {
-    width: 100%;
+    width: 100%; 
 }
 
+
+@keyframes grow {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(2, 2, 2);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.title__menu--medium:hover {
+    cursor: pointer;
+}
+
+.grow {
+    animation-name: grow;
+}
 /* ==== about ==== */
 
+.about__title:hover {
+    cursor: pointer;
+}
+
+.container__about {
+    width: 80%;
+    margin: 0 auto;
+    height: 80vh;
+    align-items: center;
+}
+
+.container__about--small {
+    width: 100%;
+    flex-direction: column;
+    border: 2px solid gold;
+    height: 50%;
+    justify-content: center;
+}
+
+.about__para {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+}
+
 /* ==== projects ==== */
+
+.project__title:hover {
+    cursor: pointer;
+}
 
 /* ==== contact ==== */
 
